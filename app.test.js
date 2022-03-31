@@ -31,5 +31,5 @@ it("should get the current state of 5", () => {
    expect(() => checkFive(NaN)).toThrow(new Error("Invalid number argument provided"))
    expect(() => checkFive(null)).toThrow(new Error("Invalid number argument provided"))
    expect(() => checkFive(null)).toThrowError(new Error("Invalid number argument provided"))
-   expect(() => checkFive('morgan')).toThrowErrorMatchingInlineSnapshot("Invalid number argument provided", `"Invalid number argument provided"`)
+   expect(() => checkFive('morgan')).toThrowErrorMatchingInlineSnapshot(`"Invalid number argument provided"`)
 })
